@@ -760,7 +760,7 @@ $(document).ready(function() {
 <t tx="yen.20170207091131.1">@language md
 Title: 網際 Brython 程式執行環境
 Date: 2017-02-07 11:00
-Category: Course
+Category: About Theacher
 Tags: brython, w1
 Slug: brython-editor
 Author: yen
