@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 40439221</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-03-01T15:00:00+08:00</updated><entry><title>W2 Solvespace 連桿系統與v-rep應用</title><link href="./Solvespace%E3%80%81v-rep.html" rel="alternate"></link><published>2017-03-01T15:00:00+08:00</published><updated>2017-03-01T15:00:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-03-01:./Solvespace、v-rep.html</id><summary type="html">&lt;p&gt;Solvespace四連桿系統與v-rep應用&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 40439221</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-03-13T15:00:00+08:00</updated><entry><title>W3-Solvespace 三角形路徑模擬與v-rep應用</title><link href="./Solvespace%E3%80%81v-rep.html" rel="alternate"></link><published>2017-03-13T15:00:00+08:00</published><updated>2017-03-13T15:00:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-03-13:./Solvespace、v-rep.html</id><summary type="html">&lt;p&gt;Solvespace三角形路徑模擬與v-rep應用&lt;/p&gt;
+
+
+&lt;h2&gt;solvespace三角形路徑模擬&lt;/h2&gt;
+&lt;h3&gt;影片&lt;/h3&gt;
+&lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/xKUHERmw40c" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h2&gt;solvespace轉v-rep&lt;/h2&gt;
+&lt;h3&gt;影片&lt;/h3&gt;
+&lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CVETAKT8jnA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h2&gt;onshape轉v-rep&lt;/h2&gt;
+&lt;h3&gt;影片&lt;/h3&gt;
+&lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/w645V42cHGU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;h4&gt;在畫三角形路徑模擬時，還好上學期有做過類似功課所以這次切入比較快，對v-rep有初步的認識，相信日後多加練習會更加熟悉&lt;/h4&gt;</summary><category term="Solvespace、v-rep W3"></category></entry><entry><title>W2-Solvespace 四連桿系統</title><link href="./Solvespace.html" rel="alternate"></link><published>2017-03-01T15:00:00+08:00</published><updated>2017-03-01T15:00:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-03-01:./Solvespace.html</id><summary type="html">&lt;p&gt;Solvespace四連桿系統&lt;/p&gt;
 
 
 &lt;h2&gt;solvespace組裝影片&lt;/h2&gt;
@@ -19,10 +32,8 @@
 &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/6z_z0vGHqWQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;iframe src="./../data/W2/50.html" width="800" height="600"&gt;&lt;/iframe&gt;
 
-&lt;h2&gt;v-rep應用&lt;/h2&gt;
-&lt;p&gt;&lt;p&gt;影片還沒整理&lt;/p&gt;&lt;/p&gt;
 &lt;h2&gt;心得&lt;/h2&gt;
-&lt;h4&gt;這次畫完之後，更熟悉Solvespace快捷鍵應用與組裝，雖然組裝過程中起初有點不順，之後有匯入成功，v-rep前還不熟悉，因為接觸不夠多，往後會多花時間練習&lt;/h4&gt;</summary><category term="Solvespace、v-rep W2"></category></entry><entry><title>W1 Solvespace 與 Onshape 組立單軸旋轉連桿系統</title><link href="./Solvespace%E3%80%81Onshape.html" rel="alternate"></link><published>2017-02-22T12:00:00+08:00</published><updated>2017-02-22T12:00:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-02-22:./Solvespace、Onshape.html</id><summary type="html">&lt;p&gt;Solvespace 與 Onshape 組立單軸旋轉連桿系統、四連桿系統&lt;/p&gt;
+&lt;h4&gt;這次畫完之後，更熟悉Solvespace快捷鍵應用與組裝，雖然組裝過程中起初有點不順，之後有匯入成功&lt;/h4&gt;</summary><category term="Solvespace W2"></category></entry><entry><title>W1-Solvespace 與 Onshape 組立單軸旋轉連桿系統</title><link href="./Solvespace%E3%80%81Onshape.html" rel="alternate"></link><published>2017-02-22T12:00:00+08:00</published><updated>2017-02-22T12:00:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-02-22:./Solvespace、Onshape.html</id><summary type="html">&lt;p&gt;Solvespace 與 Onshape 組立單軸旋轉連桿系統、四連桿系統&lt;/p&gt;
 
 
 &lt;h2&gt;Solvespace四連桿系統&lt;/h2&gt;
