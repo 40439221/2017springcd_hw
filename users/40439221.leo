@@ -36,21 +36,89 @@
 <v t="yen.20170120110024.7"><vh>封面投影片</vh>
 <v t="yen.20170120110024.8"><vh>封面投影片內容</vh></v>
 </v>
-<v t="yen.20170120110024.9"><vh>快捷鍵</vh>
-<v t="yen.20170120110024.10"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20170426173031.1"><vh>20170222Week1</vh>
+<v t="leo.20170426173031.2" a="E"><vh>周次</vh>
+<v t="leo.20170426173031.3"><vh>Week</vh></v>
 </v>
-<v t="leo.20170222114233.1" a="E"><vh>20170222Week1</vh>
-<v t="leo.20170222114233.2"><vh>上課內容1</vh></v>
+<v t="leo.20170426173031.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170426173031.5"><vh>上課內容1</vh></v>
 </v>
-<v t="yen.20170120110024.11"><vh>各式內容引用範例</vh>
-<v t="yen.20170120110024.12" a="E"><vh>導入數學符號與方程式</vh>
-<v t="yen.20170120110024.13"><vh>LaTeX 格式方程式</vh></v>
+<v t="leo.20170426173422.1" a="E"><vh>課堂報告2</vh>
+<v t="leo.20170426173422.2"><vh>上課內容1</vh></v>
 </v>
-<v t="yen.20170120110024.14" a="E"><vh>導入縮排程式碼</vh>
-<v t="yen.20170120110024.15"><vh>引用程式碼</vh></v>
 </v>
-<v t="yen.20170120110024.16" a="E"><vh>導入影片</vh>
-<v t="yen.20170120110024.17"><vh>iframe 導入影片</vh></v>
+<v t="leo.20170426174924.1"><vh>20170301Week2</vh>
+<v t="leo.20170426174924.2" a="E"><vh>周次</vh>
+<v t="leo.20170426174924.3"><vh>Week</vh></v>
+</v>
+<v t="leo.20170426174924.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170426174924.5"><vh>上課內容1</vh></v>
+</v>
+<v t="leo.20170426174924.6" a="E"><vh>課堂報告2</vh>
+<v t="leo.20170426174924.7"><vh>上課內容1</vh></v>
+</v>
+</v>
+<v t="leo.20170426175024.1"><vh>20170313Week3</vh>
+<v t="leo.20170426175024.2" a="E"><vh>周次</vh>
+<v t="leo.20170426175024.3"><vh>Week</vh></v>
+</v>
+<v t="leo.20170426175024.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170426175024.5"><vh>上課內容1</vh></v>
+</v>
+<v t="leo.20170426175024.6" a="E"><vh>課堂報告2</vh>
+<v t="leo.20170426175024.7"><vh>上課內容1</vh></v>
+</v>
+</v>
+<v t="leo.20170426175212.1"><vh>20170315Week4</vh>
+<v t="leo.20170426175212.2" a="E"><vh>周次</vh>
+<v t="leo.20170426175212.3"><vh>Week</vh></v>
+</v>
+<v t="leo.20170426175212.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170426175212.5"><vh>上課內容1</vh></v>
+</v>
+<v t="leo.20170426175212.6" a="E"><vh>課堂報告2</vh>
+<v t="leo.20170426175212.7"><vh>上課內容1</vh></v>
+</v>
+</v>
+<v t="leo.20170426175354.1"><vh>20170322Week5</vh>
+<v t="leo.20170426175354.2" a="E"><vh>周次</vh>
+<v t="leo.20170426175354.3"><vh>Week</vh></v>
+</v>
+<v t="leo.20170426175354.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170426175354.5"><vh>上課內容1</vh></v>
+</v>
+<v t="leo.20170426175354.6" a="E"><vh>課堂報告2</vh>
+<v t="leo.20170426175354.7"><vh>上課內容1</vh></v>
+</v>
+</v>
+<v t="leo.20170426175517.1"><vh>20170329Week6</vh>
+<v t="leo.20170426175517.2" a="E"><vh>周次</vh>
+<v t="leo.20170426175517.3"><vh>Week</vh></v>
+</v>
+<v t="leo.20170426175517.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170426175517.5"><vh>上課內容1</vh></v>
+</v>
+<v t="leo.20170426175517.6" a="E"><vh>課堂報告2</vh>
+<v t="leo.20170426175517.7"><vh>上課內容1</vh></v>
+</v>
+</v>
+<v t="leo.20170426175602.1"><vh>20170405Week7</vh>
+<v t="leo.20170426175602.2" a="E"><vh>周次</vh>
+<v t="leo.20170426175602.3"><vh>Week</vh></v>
+</v>
+<v t="leo.20170426175602.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170426175602.5"><vh>上課內容1</vh></v>
+</v>
+<v t="leo.20170426175602.6" a="E"><vh>課堂報告2</vh>
+<v t="leo.20170426175602.7"><vh>上課內容1</vh></v>
+</v>
+</v>
+<v t="leo.20170426175703.1"><vh>20170405Week9</vh>
+<v t="leo.20170426175703.2" a="E"><vh>周次</vh>
+<v t="leo.20170426175703.3"><vh>Week</vh></v>
+</v>
+<v t="leo.20170426175703.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170426175703.5"><vh>上課內容1</vh></v>
 </v>
 </v>
 </v>
@@ -101,36 +169,394 @@
 </v>
 </v>
 <v t="yen.20170209024032.1"><vh>reference</vh></v>
+<v t="leo.20170426174824.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20170426174824.3"><vh>Recovered node "上課內容1" from @clean index.html</vh>
+<v t="leo.20170426174824.4"><vh>old:上課內容1</vh></v>
+<v t="leo.20170426174824.5"><vh>new:上課內容1</vh></v>
+</v>
+</v>
+<v t="leo.20170426175508.2" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20170426175508.3"><vh>Recovered node "上課內容1" from @clean index.html</vh>
+<v t="leo.20170426175508.4"><vh>old:上課內容1</vh></v>
+<v t="leo.20170426175508.5"><vh>new:上課內容1</vh></v>
+</v>
+</v>
 </vnodes>
 <tnodes>
-<t tx="leo.20170222114233.1">&lt;section data-markdown&gt;
+<t tx="leo.20170426173031.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170426173031.2">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
 @others
     &lt;/script&gt;
 &lt;/section&gt;
 
 
+
 						
 </t>
-<t tx="leo.20170222114233.2"># 上課內容
-
-tiny2017 - with_pip\data\stunnel\config的stunnel.conf檔案
-
-stunnel.conf移到SciTE
-
-程式碼前面是分號 就是註解不會執行那段程式碼
-
-利用cmd查IP(ipconfig /all)
-
-將https的IP改為電腦的IP(第138行)
-
-443是https內建的port號, 不用改
-
-因為有用proxy所以要指定192.168.1.49的IP不要經過proxy                                              
-Chrome proxy設定&gt;LAN設定&gt;進階
-
-2017springcd/data/onelink_vrep_remoteapi_pos_vel.7z
+<t tx="leo.20170426173031.3"># Week 1
 </t>
+<t tx="leo.20170426173031.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426173031.5">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/uRjJYGM7xBk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20170426173422.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426173422.2">&lt;h1&gt;心得&lt;/h1&gt;
+第一次用Solvespace畫連桿組合，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+</t>
+<t tx="leo.20170426174824.2"></t>
+<t tx="leo.20170426174824.3">(uncached) leo.20170426173422.2
+Diff...
+  &lt;h1&gt;心得&lt;/h1&gt;
+- 第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+?                    ^                                                                                   -
++ 第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。?                    ^
+</t>
+<t tx="leo.20170426174824.4">&lt;h1&gt;心得&lt;/h1&gt;
+第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。</t>
+<t tx="leo.20170426174824.5">&lt;h1&gt;心得&lt;/h1&gt;
+第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+</t>
+<t tx="leo.20170426174924.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170426174924.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426174924.3"># Week 2
+</t>
+<t tx="leo.20170426174924.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426174924.5">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/y4ifCnaICbg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20170426174924.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426174924.7">&lt;h1&gt;心得&lt;/h1&gt;
+這次畫完之後，更熟悉Solvespace快捷鍵應用與組裝，雖然組裝過程中起初有點不順，之後有匯入成功
+</t>
+<t tx="leo.20170426175024.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170426175024.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175024.3"># Week 3
+</t>
+<t tx="leo.20170426175024.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175024.5">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/w645V42cHGU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20170426175024.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175024.7">&lt;h1&gt;心得&lt;/h1&gt;
+在畫三角形路徑模擬時，還好上學期有做過類似功課所以這次切入比較快，對v-rep有初步的認識，相信日後多加練習會更加熟悉
+</t>
+<t tx="leo.20170426175212.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170426175212.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175212.3"># Week 4
+</t>
+<t tx="leo.20170426175212.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175212.5">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gZkutmx1txc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20170426175212.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175212.7">&lt;h1&gt;心得&lt;/h1&gt;
+這次的翻譯經驗是我覺得對自己來說是很棒的經歷,相信經過這次對於自己的英文聽力也會有所提升,對於新軟體vrepf相信後面作業也會越來越熟練
+</t>
+<t tx="leo.20170426175354.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170426175354.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175354.3"># Week 5
+</t>
+<t tx="leo.20170426175354.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175354.5">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/HtASf_p8da8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20170426175354.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175354.7">&lt;h1&gt;心得&lt;/h1&gt;
+
+&lt;h2&gt;經過這次的回家功課，對於verp的操作更加熟悉了，也深深覺得它的重要性，相信之後找時間多加練習一定能更加熟練的使用它&lt;/h2&gt;
+</t>
+<t tx="leo.20170426175508.2"></t>
+<t tx="leo.20170426175508.3">(uncached) leo.20170426173422.2
+Diff...
+  &lt;h1&gt;心得&lt;/h1&gt;
+- 第一次用Solvespace畫連桿組合，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+?                    ^
++ 第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+?                    ^
+</t>
+<t tx="leo.20170426175508.4">&lt;h1&gt;心得&lt;/h1&gt;
+第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+</t>
+<t tx="leo.20170426175508.5">&lt;h1&gt;心得&lt;/h1&gt;
+第一次用Solvespace畫連桿組合，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+</t>
+<t tx="leo.20170426175517.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170426175517.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175517.3"># Week 6
+</t>
+<t tx="leo.20170426175517.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175517.5">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Vcv-IBASqXY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20170426175517.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175517.7">&lt;h1&gt;心得&lt;/h1&gt;
+
+&lt;h2&gt;這次將之前on-shape與所學的vrep做結合是一個很好的經驗，雖然中間有卡住不過是很好的學習經驗。&lt;/h2&gt;
+</t>
+<t tx="leo.20170426175602.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170426175602.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175602.3"># Week 7
+</t>
+<t tx="leo.20170426175602.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175602.5">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Ew-zg5eo5zs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20170426175602.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175602.7">&lt;h1&gt;心得&lt;/h1&gt;
+
+&lt;h2&gt;經過上次的作業這次熟悉了許多，但八連桿許多地方還是有點難的地方，dummy 也多了許多要注意的地方! &lt;/h2&gt;</t>
+<t tx="leo.20170426175703.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170426175703.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175703.3"># Week 9
+</t>
+<t tx="leo.20170426175703.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170426175703.5">期中測驗</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -284,91 +710,6 @@ make.start()</t>
 @others
 
 </t>
-<t tx="yen.20170120110024.10"># 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
-
-</t>
-<t tx="yen.20170120110024.11">&lt;section&gt;
-@others
-&lt;/section&gt;</t>
-<t tx="yen.20170120110024.12">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="yen.20170120110024.13"># 數學符號與方程式
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-</t>
-<t tx="yen.20170120110024.14">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-&lt;!-- 請注意, @others 不可以內縮 --&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-
-						
-</t>
-<t tx="yen.20170120110024.15">## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-@language python
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
-
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
-</t>
-<t tx="yen.20170120110024.16">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="yen.20170120110024.17">## 使用 iframe 導入影片
-
-### 導入影片 template
-
-&lt;iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-</t>
 <t tx="yen.20170120110024.2">&lt;!doctype html&gt;
 &lt;html lang="en"&gt;
 @others
@@ -461,21 +802,12 @@ make.start()
 ### 虎科大機械設計工程系
 
 &lt;small&gt;
-Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
+Created by [40439221](https://40439221.github.io/2017springcd_hw/blog/)
 &lt;/small&gt;
 
 [協同產品設計實習課程網誌](blog/index.html)
 
 
-</t>
-<t tx="yen.20170120110024.9">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
 </t>
 <t tx="yen.20170120212350.1"></t>
 <t tx="yen.20170120212354.1">@language python
