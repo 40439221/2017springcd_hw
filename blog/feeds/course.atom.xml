@@ -3,11 +3,8 @@
 
 
 &lt;p&gt;作業1:
-影片
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nOab4zqW9tk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;iframe src="./../w17/003.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;作業2:
+作業2:
 &lt;pre&gt;
 ѲԓolveSpaceREVa&lt;/p&gt;
 &lt;p&gt;Group.h.v=00000001
@@ -1452,9 +1449,11 @@ Constraint.other=0
 Constraint.other2=0
 Constraint.reference=0
 AddConstraint
-&lt;/pre&gt;
-影片:
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1OHKqSvVBsc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>w15</title><link href="./Week%2015.html" rel="alternate"></link><published>2017-05-31T08:33:00+08:00</published><updated>2017-05-31T08:33:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-05-31:./Week 15.html</id><summary type="html">&lt;p&gt;正齒輪繪圖 &lt;/p&gt;
+&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;作業3:
+&lt;pre&gt;
+git submodule add -b gh-pages https://github.com/scrum-1/cdbw17 subw17
+&lt;/pre&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>w15</title><link href="./Week%2015.html" rel="alternate"></link><published>2017-05-31T08:33:00+08:00</published><updated>2017-05-31T08:33:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-05-31:./Week 15.html</id><summary type="html">&lt;p&gt;正齒輪繪圖 &lt;/p&gt;
 
 
 &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/yLo3PgQn-Lk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
