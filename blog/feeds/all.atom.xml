@@ -4,9 +4,11 @@
 
 &lt;p&gt;作業1:
 &lt;iframe src="./../w17/003.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;作業2:
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1OHKqSvVBsc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;h3&gt;作業3:&lt;/h3&gt;
 
-&lt;p&gt;用cdbw17的名稱把https://github.com/scrum-1/cdbw17.git的倉儲加入為子模組
+&lt;p&gt;用cdbw17的名稱把 https://github.com/scrum-1/cdbw17.git 的倉儲加入為子模組
 &lt;pre&gt;
 git submodule add -b gh-pages https://github.com/scrum-1/cdbw17 subw17
 &lt;/pre&gt;&lt;/p&gt;
