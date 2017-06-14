@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>w17 - 2017Spring 協同產品設計實習 40439221</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<style type="text/css">
+
+/*some stuff for output/input prompts*/
+div.cell{border:1px solid transparent;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch}div.cell.selected{border-radius:4px;border:thin #ababab solid}
+div.cell.edit_mode{border-radius:4px;border:thin #008000 solid}
+div.cell{width:100%;padding:5px 5px 5px 0;margin:0;outline:none}
+div.prompt{min-width:11ex;padding:.4em;margin:0;font-family:monospace;text-align:right;line-height:1.21429em}
+@media (max-width:480px){div.prompt{text-align:left}}div.inner_cell{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch;-webkit-box-flex:1;-moz-box-flex:1;box-flex:1;flex:1}
+div.input_area{border:1px solid #cfcfcf;border-radius:4px;background:#f7f7f7;line-height:1.21429em}
+div.prompt:empty{padding-top:0;padding-bottom:0}
+div.input{page-break-inside:avoid;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:horizontal;-moz-box-align:stretch;display:box;box-orient:horizontal;box-align:stretch;}
+div.inner_cell{width:90%;}
+div.input_area{border:1px solid #cfcfcf;border-radius:4px;background:#f7f7f7;}
+div.input_prompt{color:navy;border-top:1px solid transparent;}
+div.output_wrapper{margin-top:5px;position:relative;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;width:100%;}
+div.output_scroll{height:24em;width:100%;overflow:auto;border-radius:4px;-webkit-box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);-moz-box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);box-shadow:inset 0 2px 8px rgba(0, 0, 0, 0.8);}
+div.output_collapsed{margin:0px;padding:0px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;width:100%;}
+div.out_prompt_overlay{height:100%;padding:0px 0.4em;position:absolute;border-radius:4px;}
+div.out_prompt_overlay:hover{-webkit-box-shadow:inset 0 0 1px #000000;-moz-box-shadow:inset 0 0 1px #000000;box-shadow:inset 0 0 1px #000000;background:rgba(240, 240, 240, 0.5);}
+div.output_prompt{color:darkred;}
+
+a.anchor-link:link{text-decoration:none;padding:0px 20px;visibility:hidden;}
+h1:hover .anchor-link,h2:hover .anchor-link,h3:hover .anchor-link,h4:hover .anchor-link,h5:hover .anchor-link,h6:hover .anchor-link{visibility:visible;}
+/* end stuff for output/input prompts*/
+
+
+.highlight-ipynb .hll { background-color: #ffffcc }
+.highlight-ipynb  { background: #f8f8f8; }
+.highlight-ipynb .c { color: #408080; font-style: italic } /* Comment */
+.highlight-ipynb .err { border: 1px solid #FF0000 } /* Error */
+.highlight-ipynb .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight-ipynb .o { color: #666666 } /* Operator */
+.highlight-ipynb .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight-ipynb .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight-ipynb .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight-ipynb .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight-ipynb .gd { color: #A00000 } /* Generic.Deleted */
+.highlight-ipynb .ge { font-style: italic } /* Generic.Emph */
+.highlight-ipynb .gr { color: #FF0000 } /* Generic.Error */
+.highlight-ipynb .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight-ipynb .gi { color: #00A000 } /* Generic.Inserted */
+.highlight-ipynb .go { color: #888888 } /* Generic.Output */
+.highlight-ipynb .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight-ipynb .gs { font-weight: bold } /* Generic.Strong */
+.highlight-ipynb .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight-ipynb .gt { color: #0044DD } /* Generic.Traceback */
+.highlight-ipynb .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight-ipynb .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight-ipynb .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight-ipynb .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight-ipynb .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight-ipynb .kt { color: #B00040 } /* Keyword.Type */
+.highlight-ipynb .m { color: #666666 } /* Literal.Number */
+.highlight-ipynb .s { color: #BA2121 } /* Literal.String */
+.highlight-ipynb .na { color: #7D9029 } /* Name.Attribute */
+.highlight-ipynb .nb { color: #008000 } /* Name.Builtin */
+.highlight-ipynb .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight-ipynb .no { color: #880000 } /* Name.Constant */
+.highlight-ipynb .nd { color: #AA22FF } /* Name.Decorator */
+.highlight-ipynb .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight-ipynb .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight-ipynb .nf { color: #0000FF } /* Name.Function */
+.highlight-ipynb .nl { color: #A0A000 } /* Name.Label */
+.highlight-ipynb .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight-ipynb .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight-ipynb .nv { color: #19177C } /* Name.Variable */
+.highlight-ipynb .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight-ipynb .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight-ipynb .mf { color: #666666 } /* Literal.Number.Float */
+.highlight-ipynb .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight-ipynb .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight-ipynb .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight-ipynb .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight-ipynb .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight-ipynb .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight-ipynb .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight-ipynb .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight-ipynb .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight-ipynb .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight-ipynb .sx { color: #008000 } /* Literal.String.Other */
+.highlight-ipynb .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight-ipynb .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight-ipynb .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight-ipynb .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight-ipynb .vc { color: #19177C } /* Name.Variable.Class */
+.highlight-ipynb .vg { color: #19177C } /* Name.Variable.Global */
+.highlight-ipynb .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight-ipynb .il { color: #666666 } /* Literal.Number.Integer.Long */
+</style>
+
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+div.entry-content {
+  overflow: visible;
+  padding: 8px;
+}
+.input_area {
+  padding: 0.2em;
+}
+
+a.heading-anchor {
+ white-space: normal;
+}
+
+.rendered_html
+code {
+ font-size: .8em;
+}
+
+pre.ipynb {
+  color: black;
+  background: #f7f7f7;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0px;
+  font-size: 13px;
+}
+
+/* remove the prompt div from text cells */
+div.text_cell .prompt {
+    display: none;
+}
+
+/* remove horizontal padding from text cells, */
+/* so it aligns with outer body text */
+div.text_cell_render {
+    padding: 0.5em 0em;
+}
+
+img.anim_icon{padding:0; border:0; vertical-align:middle; -webkit-box-shadow:none; -box-shadow:none}
+</style>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<link rel="canonical" href="./Week 17.html">
+
+        <meta name="author" content="40439221" />
+        <meta name="keywords" content="Brython" />
+        <meta name="description" content="課堂作業" />
+
+        <meta property="og:site_name" content="2017Spring 協同產品設計實習 40439221" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="w17"/>
+        <meta property="og:url" content="./Week 17.html"/>
+        <meta property="og:description" content="課堂作業"/>
+        <meta property="article:published_time" content="2017-06-14" />
+            <meta property="article:section" content="Course" />
+            <meta property="article:tag" content="Brython" />
+            <meta property="article:author" content="40439221" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="./theme/css/bootstrap.united.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments/monokai.css" rel="stylesheet">
+    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="2017Spring 協同產品設計實習 40439221 ATOM Feed"/>
+
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shBrushBash.js"></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://chiamingyen.github.io/kmolab_data/files/syntaxhighlighter/css/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://chiamingyen.github.io/kmolab_data/files/syntaxhighlighter/css/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="./" class="navbar-brand">
+2017Spring 協同產品設計實習 40439221            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="./pages/hao-ping/">
+                             Hao ping
+                          </a></li>
+                        <li >
+                            <a href="./category/about.html">About</a>
+                        </li>
+                        <li >
+                            <a href="./category/about-theacher.html">About theacher</a>
+                        </li>
+                        <li class="active">
+                            <a href="./category/course.html">Course</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="./search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+              <li><a href="./archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./Week 17.html"
+                       rel="bookmark"
+                       title="Permalink to w17">
+                        w17
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-06-14T09:22:00+08:00"> 週三 14 六月 2017</time>
+    </span>
+            <span class="label label-default">By</span>
+            <a href="./author/40439221.html"><i class="fa fa-user"></i> 40439221</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/brython.html">Brython</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>課堂作業 </p>
+
+
+<p>Group.h.v=00000001
+Group.type=5000
+Group.name=#references
+Group.color=ff000000
+Group.skipFirst=0
+Group.predef.swapUV=0
+Group.predef.negateU=0
+Group.predef.negateV=0
+Group.visible=1
+Group.suppress=0
+Group.relaxConstraints=0
+Group.allowRedundant=0
+Group.allDimsReference=0
+Group.remap={
+}
+AddGroup</p>
+<p>Group.h.v=00000002
+Group.type=5001
+Group.order=1
+Group.name=sketch-in-plane
+Group.activeWorkplane.v=80020000
+Group.color=ff000000
+Group.subtype=6000
+Group.skipFirst=0
+Group.predef.q.w=1.00000000000000000000
+Group.predef.origin.v=00010001
+Group.predef.swapUV=0
+Group.predef.negateU=0
+Group.predef.negateV=0
+Group.visible=1
+Group.suppress=0
+Group.relaxConstraints=0
+Group.allowRedundant=0
+Group.allDimsReference=0
+Group.remap={
+}
+AddGroup</p>
+<p>Param.h.v.=00010010
+AddParam</p>
+<p>Param.h.v.=00010011
+AddParam</p>
+<p>Param.h.v.=00010012
+AddParam</p>
+<p>Param.h.v.=00010020
+Param.val=1.00000000000000000000
+AddParam</p>
+<p>Param.h.v.=00010021
+AddParam</p>
+<p>Param.h.v.=00010022
+AddParam</p>
+<p>Param.h.v.=00010023
+AddParam</p>
+<p>Param.h.v.=00020010
+AddParam</p>
+<p>Param.h.v.=00020011
+AddParam</p>
+<p>Param.h.v.=00020012
+AddParam</p>
+<p>Param.h.v.=00020020
+Param.val=0.50000000000000000000
+AddParam</p>
+<p>Param.h.v.=00020021
+Param.val=0.50000000000000000000
+AddParam</p>
+<p>Param.h.v.=00020022
+Param.val=0.50000000000000000000
+AddParam</p>
+<p>Param.h.v.=00020023
+Param.val=0.50000000000000000000
+AddParam</p>
+<p>Param.h.v.=00030010
+AddParam</p>
+<p>Param.h.v.=00030011
+AddParam</p>
+<p>Param.h.v.=00030012
+AddParam</p>
+<p>Param.h.v.=00030020
+Param.val=0.50000000000000000000
+AddParam</p>
+<p>Param.h.v.=00030021
+Param.val=-0.50000000000000000000
+AddParam</p>
+<p>Param.h.v.=00030022
+Param.val=-0.50000000000000000000
+AddParam</p>
+<p>Param.h.v.=00030023
+Param.val=-0.50000000000000000000
+AddParam</p>
+<p>Param.h.v.=00040010
+Param.val=-0.06719999999999548600
+AddParam</p>
+<p>Param.h.v.=00040011
+Param.val=70.00608888888891100000
+AddParam</p>
+<p>Param.h.v.=00040040
+Param.val=5.43397313206460280000
+AddParam</p>
+<p>Param.h.v.=00050010
+Param.val=15.69984944640119400000
+AddParam</p>
+<p>Param.h.v.=00050011
+Param.val=74.71911877116814100000
+AddParam</p>
+<p>Param.h.v.=00050013
+Param.val=-0.93105650118250016000
+AddParam</p>
+<p>Param.h.v.=00050014
+Param.val=85.82825768301118800000
+AddParam</p>
+<p>Param.h.v.=00060010
+Param.val=-0.93105650118250016000
+AddParam</p>
+<p>Param.h.v.=00060011
+Param.val=85.82825768301118800000
+AddParam</p>
+<p>Param.h.v.=00060013
+Param.val=-91.95872020810570300000
+AddParam</p>
+<p>Param.h.v.=00060014
+Param.val=-50.44445667869628400000
+AddParam</p>
+<p>Param.h.v.=00070010
+Param.val=-91.95872020810570300000
+AddParam</p>
+<p>Param.h.v.=00070011
+Param.val=-50.44445667869628400000
+AddParam</p>
+<p>Param.h.v.=00070013
+Param.val=-75.32781426052201800000
+AddParam</p>
+<p>Param.h.v.=00070014
+Param.val=-61.55359559053932400000
+AddParam</p>
+<p>Param.h.v.=00080010
+Param.val=-75.32781426052201800000
+AddParam</p>
+<p>Param.h.v.=00080011
+Param.val=-61.55359559053932400000
+AddParam</p>
+<p>Param.h.v.=00080013
+Param.val=15.69984944640119400000
+AddParam</p>
+<p>Param.h.v.=00080014
+Param.val=74.71911877116814100000
+AddParam</p>
+<p>Param.h.v.=00090010
+Param.val=7.72239025632465380000
+AddParam</p>
+<p>Param.h.v.=00090011
+Param.val=82.47190930053982100000
+AddParam</p>
+<p>Param.h.v.=00090013
+Param.val=34.79512895885449100000
+AddParam</p>
+<p>Param.h.v.=00090014
+Param.val=-74.51848332916567600000
+AddParam</p>
+<p>Param.h.v.=000a0010
+Param.val=34.79512895885449100000
+AddParam</p>
+<p>Param.h.v.=000a0011
+Param.val=-74.51848332916567600000
+AddParam</p>
+<p>Param.h.v.=000a0013
+Param.val=15.08604078872708600000
+AddParam</p>
+<p>Param.h.v.=000a0014
+Param.val=-77.91728363252907700000
+AddParam</p>
+<p>Param.h.v.=000b0010
+Param.val=15.08604078872708600000
+AddParam</p>
+<p>Param.h.v.=000b0011
+Param.val=-77.91728363252907700000
+AddParam</p>
+<p>Param.h.v.=000b0013
+Param.val=-11.98669791380277300000
+AddParam</p>
+<p>Param.h.v.=000b0014
+Param.val=79.07310899717641900000
+AddParam</p>
+<p>Param.h.v.=000c0010
+Param.val=-11.98669791380277300000
+AddParam</p>
+<p>Param.h.v.=000c0011
+Param.val=79.07310899717641900000
+AddParam</p>
+<p>Param.h.v.=000c0013
+Param.val=7.72239025632465380000
+AddParam</p>
+<p>Param.h.v.=000c0014
+Param.val=82.47190930053982100000
+AddParam</p>
+<p>Param.h.v.=000d0010
+Param.val=-75.32781426052201800000
+AddParam</p>
+<p>Param.h.v.=000d0011
+Param.val=-61.55359559053932400000
+AddParam</p>
+<p>Param.h.v.=000d0013
+Param.val=-100.27417318189755000000
+AddParam</p>
+<p>Param.h.v.=000d0014
+Param.val=-44.88988722277475300000
+AddParam</p>
+<p>Param.h.v.=000e0010
+Param.val=-100.27417318189755000000
+AddParam</p>
+<p>Param.h.v.=000e0011
+Param.val=-44.88988722277475300000
+AddParam</p>
+<p>Param.h.v.=000e0013
+Param.val=-105.27328569222692000000
+AddParam</p>
+<p>Param.h.v.=000e0014
+Param.val=-52.37379489918741600000
+AddParam</p>
+<p>Param.h.v.=000f0010
+Param.val=-75.32781426052201800000
+AddParam</p>
+<p>Param.h.v.=000f0011
+Param.val=-61.55359559053932400000
+AddParam</p>
+<p>Param.h.v.=000f0013
+Param.val=-64.45776365508521600000
+AddParam</p>
+<p>Param.h.v.=000f0014
+Param.val=-69.21561183748598000000
+AddParam</p>
+<p>Param.h.v.=00100010
+Param.val=-64.45776365508521600000
+AddParam</p>
+<p>Param.h.v.=00100011
+Param.val=-69.21561183748598000000
+AddParam</p>
+<p>Param.h.v.=00100013
+Param.val=-69.33659748850047300000
+AddParam</p>
+<p>Param.h.v.=00100014
+Param.val=-76.13718038491302300000
+AddParam</p>
+<p>Param.h.v.=00110010
+Param.val=-105.27328569222692000000
+AddParam</p>
+<p>Param.h.v.=00110011
+Param.val=-52.37379489918741600000
+AddParam</p>
+<p>Param.h.v.=00110013
+Param.val=-100.57160174116871000000
+AddParam</p>
+<p>Param.h.v.=00110014
+Param.val=-58.07293219710675900000
+AddParam</p>
+<p>Param.h.v.=00110016
+Param.val=-91.16875405154121400000
+AddParam</p>
+<p>Param.h.v.=00110017
+Param.val=-69.47134258917850500000
+AddParam</p>
+<p>Param.h.v.=00110019
+Param.val=-80.25208738487452800000
+AddParam</p>
+<p>Param.h.v.=0011001a
+Param.val=-72.80467592251184800000
+AddParam</p>
+<p>Param.h.v.=0011001c
+Param.val=-69.33659748850047300000
+AddParam</p>
+<p>Param.h.v.=0011001d
+Param.val=-76.13718038491302300000
+AddParam</p>
+<p>Param.h.v.=00120010
+Param.val=15.08604078872708600000
+AddParam</p>
+<p>Param.h.v.=00120011
+Param.val=-77.91728363252907700000
+AddParam</p>
+<p>Param.h.v.=00120013
+Param.val=5.23149670366335770000
+AddParam</p>
+<p>Param.h.v.=00120014
+Param.val=-79.61668378421077800000
+AddParam</p>
+<p>Param.h.v.=00130010
+Param.val=5.23149670366335770000
+AddParam</p>
+<p>Param.h.v.=00130011
+Param.val=-79.61668378421077800000
+AddParam</p>
+<p>Param.h.v.=00130013
+Param.val=7.31180882593797410000
+AddParam</p>
+<p>Param.h.v.=00130014
+Param.val=-91.68007421015646200000
+AddParam</p>
+<p>Param.h.v.=00140010
+Param.val=34.79512895885449100000
+AddParam</p>
+<p>Param.h.v.=00140011
+Param.val=-74.51848332916567600000
+AddParam</p>
+<p>Param.h.v.=00140013
+Param.val=44.64967304391822700000
+AddParam</p>
+<p>Param.h.v.=00140014
+Param.val=-72.81908317748397500000
+AddParam</p>
+<p>Param.h.v.=00150010
+Param.val=44.64967304391822700000
+AddParam</p>
+<p>Param.h.v.=00150011
+Param.val=-72.81908317748397500000
+AddParam</p>
+<p>Param.h.v.=00150013
+Param.val=46.48359075529508300000
+AddParam</p>
+<p>Param.h.v.=00150014
+Param.val=-83.45367263380370600000
+AddParam</p>
+<p>Param.h.v.=00160010
+Param.val=7.31180882593797410000
+AddParam</p>
+<p>Param.h.v.=00160011
+Param.val=-91.68007421015646200000
+AddParam</p>
+<p>Param.h.v.=00160013
+Param.val=13.68309140085538900000
+AddParam</p>
+<p>Param.h.v.=00160014
+Param.val=-92.27947360225937200000
+AddParam</p>
+<p>Param.h.v.=00160016
+Param.val=26.41519853725873900000
+AddParam</p>
+<p>Param.h.v.=00160017
+Param.val=-93.48007621691184000000
+AddParam</p>
+<p>Param.h.v.=00160019
+Param.val=36.43759853725872900000
+AddParam</p>
+<p>Param.h.v.=0016001a
+Param.val=-88.46887621691185200000
+AddParam</p>
+<p>Param.h.v.=0016001c
+Param.val=46.48359075529508300000
+AddParam</p>
+<p>Param.h.v.=0016001d
+Param.val=-83.45367263380370600000
+AddParam</p>
+<p>Param.h.v.=00170010
+Param.val=68.75333428793511800000
+AddParam</p>
+<p>Param.h.v.=00170011
+Param.val=-82.02967710738096200000
+AddParam</p>
+<p>Param.h.v.=00170013
+Param.val=-122.94683851206480000000
+AddParam</p>
+<p>Param.h.v.=00170014
+Param.val=-130.99981470738095000000
+AddParam</p>
+<p>Request.h.v=00000001
+Request.type=100
+Request.group.v=00000001
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000002
+Request.type=100
+Request.group.v=00000001
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000003
+Request.type=100
+Request.group.v=00000001
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000004
+Request.type=400
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000005
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000006
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000007
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000008
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000009
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=0000000a
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=0000000b
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=0000000c
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=0000000d
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=0000000e
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=0000000f
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000010
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000011
+Request.type=300
+Request.extraPoints=1
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000012
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000013
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000014
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000015
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000016
+Request.type=300
+Request.extraPoints=1
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Request.h.v=00000017
+Request.type=200
+Request.workplane.v=80020000
+Request.group.v=00000002
+Request.construction=0
+AddRequest</p>
+<p>Entity.h.v=00010000
+Entity.type=10000
+Entity.construction=0
+Entity.point[0].v=00010001
+Entity.normal.v=00010020
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00010001
+Entity.type=2000
+Entity.construction=0
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00010020
+Entity.type=3000
+Entity.construction=0
+Entity.point[0].v=00010001
+Entity.actNormal.w=1.00000000000000000000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00020000
+Entity.type=10000
+Entity.construction=0
+Entity.point[0].v=00020001
+Entity.normal.v=00020020
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00020001
+Entity.type=2000
+Entity.construction=0
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00020020
+Entity.type=3000
+Entity.construction=0
+Entity.point[0].v=00020001
+Entity.actNormal.w=0.50000000000000000000
+Entity.actNormal.vx=0.50000000000000000000
+Entity.actNormal.vy=0.50000000000000000000
+Entity.actNormal.vz=0.50000000000000000000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00030000
+Entity.type=10000
+Entity.construction=0
+Entity.point[0].v=00030001
+Entity.normal.v=00030020
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00030001
+Entity.type=2000
+Entity.construction=0
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00030020
+Entity.type=3000
+Entity.construction=0
+Entity.point[0].v=00030001
+Entity.actNormal.w=0.50000000000000000000
+Entity.actNormal.vx=-0.50000000000000000000
+Entity.actNormal.vy=-0.50000000000000000000
+Entity.actNormal.vz=-0.50000000000000000000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00040000
+Entity.type=13000
+Entity.construction=0
+Entity.point[0].v=00040001
+Entity.normal.v=00040020
+Entity.distance.v=00040040
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00040001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-0.06719999999999548600
+Entity.actPoint.y=70.00608888888891100000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00040020
+Entity.type=3001
+Entity.construction=0
+Entity.point[0].v=00040001
+Entity.workplane.v=80020000
+Entity.actNormal.w=1.00000000000000000000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00040040
+Entity.type=4000
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actDistance=5.43397313206460280000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00050000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00050001
+Entity.point[1].v=00050002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00050001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=15.69984944640119400000
+Entity.actPoint.y=74.71911877116814100000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00050002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-0.93105650118250016000
+Entity.actPoint.y=85.82825768301118800000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00060000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00060001
+Entity.point[1].v=00060002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00060001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-0.93105650118250016000
+Entity.actPoint.y=85.82825768301118800000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00060002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-91.95872020810570300000
+Entity.actPoint.y=-50.44445667869628400000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00070000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00070001
+Entity.point[1].v=00070002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00070001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-91.95872020810570300000
+Entity.actPoint.y=-50.44445667869628400000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00070002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-75.32781426052201800000
+Entity.actPoint.y=-61.55359559053932400000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00080000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00080001
+Entity.point[1].v=00080002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00080001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-75.32781426052201800000
+Entity.actPoint.y=-61.55359559053932400000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00080002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=15.69984944640119400000
+Entity.actPoint.y=74.71911877116814100000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00090000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00090001
+Entity.point[1].v=00090002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00090001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=7.72239025632465380000
+Entity.actPoint.y=82.47190930053982100000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00090002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=34.79512895885449100000
+Entity.actPoint.y=-74.51848332916567600000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000a0000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=000a0001
+Entity.point[1].v=000a0002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000a0001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=34.79512895885449100000
+Entity.actPoint.y=-74.51848332916567600000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000a0002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=15.08604078872708600000
+Entity.actPoint.y=-77.91728363252907700000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000b0000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=000b0001
+Entity.point[1].v=000b0002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000b0001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=15.08604078872708600000
+Entity.actPoint.y=-77.91728363252907700000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000b0002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-11.98669791380277300000
+Entity.actPoint.y=79.07310899717641900000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000c0000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=000c0001
+Entity.point[1].v=000c0002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000c0001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-11.98669791380277300000
+Entity.actPoint.y=79.07310899717641900000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000c0002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=7.72239025632465380000
+Entity.actPoint.y=82.47190930053982100000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000d0000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=000d0001
+Entity.point[1].v=000d0002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000d0001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-75.32781426052201800000
+Entity.actPoint.y=-61.55359559053932400000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000d0002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-100.27417318189755000000
+Entity.actPoint.y=-44.88988722277475300000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000e0000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=000e0001
+Entity.point[1].v=000e0002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000e0001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-100.27417318189755000000
+Entity.actPoint.y=-44.88988722277475300000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000e0002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-105.27328569222692000000
+Entity.actPoint.y=-52.37379489918741600000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000f0000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=000f0001
+Entity.point[1].v=000f0002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000f0001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-75.32781426052201800000
+Entity.actPoint.y=-61.55359559053932400000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=000f0002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-64.45776365508521600000
+Entity.actPoint.y=-69.21561183748598000000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00100000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00100001
+Entity.point[1].v=00100002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00100001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-64.45776365508521600000
+Entity.actPoint.y=-69.21561183748598000000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00100002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-69.33659748850047300000
+Entity.actPoint.y=-76.13718038491302300000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00110000
+Entity.type=12000
+Entity.construction=0
+Entity.point[0].v=00110001
+Entity.point[1].v=00110002
+Entity.point[2].v=00110003
+Entity.point[3].v=00110004
+Entity.point[4].v=00110005
+Entity.extraPoints=1
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00110001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-105.27328569222692000000
+Entity.actPoint.y=-52.37379489918741600000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00110002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-100.57160174116871000000
+Entity.actPoint.y=-58.07293219710675900000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00110003
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-91.16875405154121400000
+Entity.actPoint.y=-69.47134258917850500000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00110004
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-80.25208738487452800000
+Entity.actPoint.y=-72.80467592251184800000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00110005
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-69.33659748850047300000
+Entity.actPoint.y=-76.13718038491302300000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00120000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00120001
+Entity.point[1].v=00120002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00120001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=15.08604078872708600000
+Entity.actPoint.y=-77.91728363252907700000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00120002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=5.23149670366335770000
+Entity.actPoint.y=-79.61668378421077800000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00130000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00130001
+Entity.point[1].v=00130002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00130001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=5.23149670366335770000
+Entity.actPoint.y=-79.61668378421077800000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00130002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=7.31180882593797410000
+Entity.actPoint.y=-91.68007421015646200000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00140000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00140001
+Entity.point[1].v=00140002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00140001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=34.79512895885449100000
+Entity.actPoint.y=-74.51848332916567600000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00140002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=44.64967304391822700000
+Entity.actPoint.y=-72.81908317748397500000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00150000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00150001
+Entity.point[1].v=00150002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00150001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=44.64967304391822700000
+Entity.actPoint.y=-72.81908317748397500000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00150002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=46.48359075529508300000
+Entity.actPoint.y=-83.45367263380370600000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00160000
+Entity.type=12000
+Entity.construction=0
+Entity.point[0].v=00160001
+Entity.point[1].v=00160002
+Entity.point[2].v=00160003
+Entity.point[3].v=00160004
+Entity.point[4].v=00160005
+Entity.extraPoints=1
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00160001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=7.31180882593797410000
+Entity.actPoint.y=-91.68007421015646200000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00160002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=13.68309140085538900000
+Entity.actPoint.y=-92.27947360225937200000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00160003
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=26.41519853725873900000
+Entity.actPoint.y=-93.48007621691184000000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00160004
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=36.43759853725872900000
+Entity.actPoint.y=-88.46887621691185200000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00160005
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=46.48359075529508300000
+Entity.actPoint.y=-83.45367263380370600000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00170000
+Entity.type=11000
+Entity.construction=0
+Entity.point[0].v=00170001
+Entity.point[1].v=00170002
+Entity.workplane.v=80020000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00170001
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=68.75333428793511800000
+Entity.actPoint.y=-82.02967710738096200000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=00170002
+Entity.type=2001
+Entity.construction=0
+Entity.workplane.v=80020000
+Entity.actPoint.x=-122.94683851206480000000
+Entity.actPoint.y=-130.99981470738095000000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=80020000
+Entity.type=10000
+Entity.construction=0
+Entity.point[0].v=80020002
+Entity.normal.v=80020001
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=80020001
+Entity.type=3010
+Entity.construction=0
+Entity.point[0].v=80020002
+Entity.actNormal.w=1.00000000000000000000
+Entity.actVisible=1
+AddEntity</p>
+<p>Entity.h.v=80020002
+Entity.type=2012
+Entity.construction=0
+Entity.actVisible=1
+AddEntity</p>
+<p>Constraint.h.v=00000001
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00050002
+Constraint.ptB.v=00060001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000002
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00060002
+Constraint.ptB.v=00070001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000003
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00070002
+Constraint.ptB.v=00080001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000004
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00050001
+Constraint.ptB.v=00080002
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000005
+Constraint.type=122
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=00080000
+Constraint.entityB.v=00050000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000006
+Constraint.type=122
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=00060000
+Constraint.entityB.v=00050000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000007
+Constraint.type=122
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=00060000
+Constraint.entityB.v=00070000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000008
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00090002
+Constraint.ptB.v=000a0001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000009
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=000a0002
+Constraint.ptB.v=000b0001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=0000000a
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=000b0002
+Constraint.ptB.v=000c0001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=0000000b
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00090001
+Constraint.ptB.v=000c0002
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=0000000c
+Constraint.type=120
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=90.00000000000000000000
+Constraint.entityA.v=000c0000
+Constraint.entityB.v=00090000
+Constraint.other=1
+Constraint.other2=0
+Constraint.reference=0
+Constraint.disp.offset.x=-4.89599999999999810000
+Constraint.disp.offset.y=-8.63999999999999700000
+AddConstraint</p>
+<p>Constraint.h.v=0000000d
+Constraint.type=120
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=90.00000000000000000000
+Constraint.entityA.v=000b0000
+Constraint.entityB.v=000c0000
+Constraint.other=1
+Constraint.other2=0
+Constraint.reference=0
+Constraint.disp.offset.x=6.63551999999999880000
+Constraint.disp.offset.y=-4.14719999999999890000
+AddConstraint</p>
+<p>Constraint.h.v=0000000e
+Constraint.type=122
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=000b0000
+Constraint.entityB.v=000a0000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=0000000f
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00070002
+Constraint.ptB.v=000d0001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000010
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=000d0002
+Constraint.ptB.v=000e0001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000011
+Constraint.type=121
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=000d0000
+Constraint.entityB.v=00070000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000012
+Constraint.type=122
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=000e0000
+Constraint.entityB.v=000d0000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000013
+Constraint.type=30
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=9.00000000000000000000
+Constraint.ptA.v=000e0001
+Constraint.ptB.v=000e0002
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+Constraint.disp.offset.x=-12.08133228815095700000
+Constraint.disp.offset.y=7.21651174824128640000
+Constraint.disp.offset.z=3.05341912137468000000
+AddConstraint</p>
+<p>Constraint.h.v=00000014
+Constraint.type=30
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=30.00000000000000000000
+Constraint.ptA.v=000d0001
+Constraint.ptB.v=000d0002
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+Constraint.disp.offset.x=8.24935135935881900000
+Constraint.disp.offset.y=15.18376113319241400000
+AddConstraint</p>
+<p>Constraint.h.v=00000015
+Constraint.type=30
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=20.00000000000000000000
+Constraint.ptA.v=00050001
+Constraint.ptB.v=00050002
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+Constraint.disp.offset.x=2.15173436952197420000
+Constraint.disp.offset.y=3.39420056743888440000
+AddConstraint</p>
+<p>Constraint.h.v=00000016
+Constraint.type=30
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=20.00000000000000000000
+Constraint.ptA.v=000c0001
+Constraint.ptB.v=000c0002
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+Constraint.disp.offset.x=1.52637216061624410000
+Constraint.disp.offset.y=-9.88282287746247510000
+AddConstraint</p>
+<p>Constraint.h.v=00000017
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00070002
+Constraint.ptB.v=000f0001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000018
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=000f0002
+Constraint.ptB.v=00100001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000019
+Constraint.type=122
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=000f0000
+Constraint.entityB.v=00100000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=0000001a
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=000e0002
+Constraint.ptB.v=00110001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=0000001b
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00100002
+Constraint.ptB.v=00110005
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=0000001c
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=000a0002
+Constraint.ptB.v=00120001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=0000001d
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00120002
+Constraint.ptB.v=00130001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=0000001e
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00090002
+Constraint.ptB.v=00140001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=0000001f
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00140002
+Constraint.ptB.v=00150001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000020
+Constraint.type=121
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=00120000
+Constraint.entityB.v=000a0000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000021
+Constraint.type=121
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=000a0000
+Constraint.entityB.v=00140000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000022
+Constraint.type=122
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=00130000
+Constraint.entityB.v=00120000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000023
+Constraint.type=122
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.entityA.v=00140000
+Constraint.entityB.v=00150000
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000024
+Constraint.type=30
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=30.00000000000000000000
+Constraint.ptA.v=00090002
+Constraint.ptB.v=00120002
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+Constraint.disp.offset.x=-3.23325292995956430000
+Constraint.disp.offset.y=20.48237709571103000000
+AddConstraint</p>
+<p>Constraint.h.v=00000025
+Constraint.type=30
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.valA=30.00000000000000000000
+Constraint.ptA.v=000a0002
+Constraint.ptB.v=00140002
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+Constraint.disp.offset.x=2.65223679281875090000
+Constraint.disp.offset.y=-20.56568345557273900000
+AddConstraint</p>
+<p>Constraint.h.v=00000026
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00130002
+Constraint.ptB.v=00160001
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+<p>Constraint.h.v=00000027
+Constraint.type=20
+Constraint.group.v=00000002
+Constraint.workplane.v=80020000
+Constraint.ptA.v=00150002
+Constraint.ptB.v=00160005
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+                <ul class="list-group" id="recentposts">
+                    <li class="list-group-item">
+                        <a href="./Week 17.html">
+                            w17
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./Week 15.html">
+                            w15
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./Week 12.html">
+                            w12正齒輪繪圖
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./Week 11.html">
+                            w11心得報告
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./四連桿.html">
+                            期中考報告 四連桿頂點軌跡
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-group-item"><a href="./categories.html"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
+                <ul class="list-group" id="categories">
+                    <li class="list-group-item">
+                        <a href="./category/about.html">
+                            <i class="fa fa-folder-open fa-lg"></i> About
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./category/about-theacher.html">
+                            <i class="fa fa-folder-open fa-lg"></i> About Theacher
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="./category/course.html">
+                            <i class="fa fa-folder-open fa-lg"></i> Course
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list-group-item"><a href="./tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group list-inline tagcloud" id="tags">
+                </ul>
+            </li>
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/DandyDev/pelican-bootstrap3/" target="_blank">
+                pelican-bootstrap3
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/getpelican/pelican-plugins" target="_blank">
+                pelican-plugins
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://github.com/Tipue/Tipue-Search" target="_blank">
+                Tipue search
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2017 KMOL
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="./theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./theme/js/bootstrap.min.js"></script>
+
+<!-- for https://github.com/jsor/lity lightbox video popup -->
+
+<link href="./theme/css/lity.css" rel="stylesheet">
+
+<script src="./theme/js/lity.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="./theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
