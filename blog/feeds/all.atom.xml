@@ -1450,10 +1450,17 @@ Constraint.other2=0
 Constraint.reference=0
 AddConstraint
 &lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;作業3:
+&lt;h3&gt;作業3:&lt;/h3&gt;
+
+&lt;p&gt;用cdbw17的名稱把https://github.com/scrum-1/cdbw17.git的倉儲加入為子模組
 &lt;pre&gt;
 git submodule add -b gh-pages https://github.com/scrum-1/cdbw17 subw17
-&lt;/pre&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>w15</title><link href="./Week%2015.html" rel="alternate"></link><published>2017-05-31T08:33:00+08:00</published><updated>2017-05-31T08:33:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-05-31:./Week 15.html</id><summary type="html">&lt;p&gt;正齒輪繪圖 &lt;/p&gt;
+&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;抓對應子模組的版本&lt;/p&gt;
+&lt;pre&gt;git submodule update --init --recursive&lt;/pre&gt;
+
+&lt;p&gt;更新子模組的資料,甚至更新子模組裡子模組的資料&lt;/p&gt;
+&lt;pre&gt;git submodule foreach "(git checkout gh-pages; git pull)&amp;"&lt;/pre&gt;</summary><category term="Brython"></category></entry><entry><title>w15</title><link href="./Week%2015.html" rel="alternate"></link><published>2017-05-31T08:33:00+08:00</published><updated>2017-05-31T08:33:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-05-31:./Week 15.html</id><summary type="html">&lt;p&gt;正齒輪繪圖 &lt;/p&gt;
 
 
 &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/yLo3PgQn-Lk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;

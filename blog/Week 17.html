@@ -1769,10 +1769,17 @@ Constraint.other2=0
 Constraint.reference=0
 AddConstraint
 </pre></p>
-<p>作業3:
+<h3>作業3:</h3>
+
+<p>用cdbw17的名稱把https://github.com/scrum-1/cdbw17.git的倉儲加入為子模組
 <pre>
 git submodule add -b gh-pages https://github.com/scrum-1/cdbw17 subw17
 </pre></p>
+<p>抓對應子模組的版本</p>
+<pre>git submodule update --init --recursive</pre>
+
+<p>更新子模組的資料,甚至更新子模組裡子模組的資料</p>
+<pre>git submodule foreach "(git checkout gh-pages; git pull)&"</pre>
             </div>
             <!-- /.entry-content -->
         </article>
