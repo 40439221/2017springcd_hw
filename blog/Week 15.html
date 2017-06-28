@@ -498,9 +498,9 @@ brython({debug:1, pythonpath:['./../data/py']});
 
 <!-- 以下實際利用  Brython 繪圖-->
 
-<canvas id="onegear2" width="800" height="600"></canvas>
+<canvas id="gearW15" width="800" height="600"></canvas>
 
-<div id="onegear2_div" width="800" height="20"></div>
+<div id="gearW15_div" width="800" height="20"></div>
 
 <script type="text/python3">
 from browser import document as doc
@@ -531,7 +531,7 @@ class Spur(object):
         # 齒輪漸開線分成 15 線段繪製
         imax = 15
         # 在輸入的畫布上繪製直線, 由圓心到節圓 y 軸頂點畫一直線
-        self.create_line(midx, midy, midx-rp, midy)
+        self.create_line(midx, midy, midx, midy-rp)
         # 畫出 rp 圓, 畫圓函式尚未定義
         #create_oval(midx-rp, midy-rp, midx+rp, midy+rp, width=2)
         # a 為模數 (代表公制中齒的大小), 模數為節圓直徑(稱為節徑)除以齒數
@@ -623,21 +623,30 @@ class Spur(object):
             # lfx 為齒頂圓上的左側 x 座標, lfy 則為 y 座標
             # 下列為齒頂圓上用來近似圓弧的直線
             self.create_line(lfx,lfy,rfx,rfy,fill=color)
-canvas = doc['onegear2']
+canvas = doc['gearW15']
 ctx = canvas.getContext("2d")
 x = (canvas.width)/2
 y = (canvas.height)/2
-r = 250
+r = 0.8*(canvas.height/2)
 # 齒數
 n = 36
 # 壓力角
 pa = 20
 Spur(ctx).Gear(x, y, r, n, pa, "blue")
+
 ctx.beginPath()
-ctx.fillStyle="#0000FF"
-ctx.font="30px ScriptS"
-ctx.fillText("40439221",(canvas.width)/2-60,(canvas.height)/2+25)
+ctx.lineWidth = "600"
+ctx.strokeStyle = "white"
+ctx.moveTo(0,600)
+ctx.lineTo(800,600)
 ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#BA55D3"
+ctx.font = "30px ScriptS"
+ctx.fillText("40439221", (canvas.width)/2-60, (canvas.height)/2+25)
+ctx.stroke()
+
 </script>
             </div>
             <!-- /.entry-content -->
@@ -659,23 +668,23 @@ ctx.stroke()
                         </a>
                     </li>
                     <li class="list-group-item">
+                        <a href="./Week 16.html">
+                            w16 齒輪模擬
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="./Week 15.html">
                             w15 課堂測驗
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./Week 12.html">
-                            w12正齒輪繪圖
+                        <a href="./Week 14.html">
+                            w14架設伺服器主機
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./Week 11.html">
-                            w11心得報告
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./四連桿.html">
-                            期中考報告 四連桿頂點軌跡
+                        <a href="./Week 13.html">
+                            w13第四組行走機構
                         </a>
                     </li>
                 </ul>

@@ -121,14 +121,6 @@
 <v t="leo.20170426175703.5"><vh>上課內容1</vh></v>
 </v>
 </v>
-<v t="leo.20170621095136.1"><vh>20170510Week11</vh>
-<v t="leo.20170621095136.2" a="E"><vh>周次</vh>
-<v t="leo.20170621095136.3"><vh>Week</vh></v>
-</v>
-<v t="leo.20170621095136.4" a="E"><vh>課堂報告1</vh>
-<v t="leo.20170621095136.5"><vh>上課內容1</vh></v>
-</v>
-</v>
 <v t="leo.20170621095140.1"><vh>20170517Week12</vh>
 <v t="leo.20170621095140.2" a="E"><vh>周次</vh>
 <v t="leo.20170621095140.3"><vh>Week</vh></v>
@@ -137,12 +129,42 @@
 <v t="leo.20170621095140.5"><vh>上課內容1</vh></v>
 </v>
 </v>
+<v t="leo.20170629001121.1"><vh>20170524Week13</vh>
+<v t="leo.20170629001121.2" a="E"><vh>周次</vh>
+<v t="leo.20170629001121.3"><vh>Week</vh></v>
+</v>
+<v t="leo.20170629001121.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170629001121.5"><vh>上課內容1</vh></v>
+<v t="leo.20170629001249.1"><vh>上課內容1</vh></v>
+<v t="leo.20170629001251.1"><vh>上課內容1</vh></v>
+<v t="leo.20170629001257.1"><vh>上課內容1</vh></v>
+</v>
+<v t="leo.20170629001121.6"><vh>課堂報告2</vh>
+<v t="leo.20170629001121.7"><vh>上課內容1</vh></v>
+</v>
+</v>
+<v t="leo.20170621095136.1"><vh>20170531Week14</vh>
+<v t="leo.20170621095136.2" a="E"><vh>周次</vh>
+<v t="leo.20170621095136.3"><vh>Week</vh></v>
+</v>
+<v t="leo.20170621095136.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170621095136.5"><vh>上課內容1</vh></v>
+</v>
+</v>
 <v t="leo.20170621095143.1"><vh>20170531Week15</vh>
 <v t="leo.20170621095143.2" a="E"><vh>周次</vh>
 <v t="leo.20170621095143.3"><vh>Week</vh></v>
 </v>
 <v t="leo.20170621095143.4" a="E"><vh>課堂報告1</vh>
 <v t="leo.20170621095143.5"><vh>上課內容1</vh></v>
+</v>
+</v>
+<v t="leo.20170629001547.1"><vh>20170607Week16</vh>
+<v t="leo.20170629001547.2" a="E"><vh>周次</vh>
+<v t="leo.20170629001547.3"><vh>Week</vh></v>
+</v>
+<v t="leo.20170629001547.4" a="E"><vh>課堂報告1</vh>
+<v t="leo.20170629001547.5"><vh>上課內容1</vh></v>
 </v>
 </v>
 <v t="leo.20170621095203.1"><vh>20170614Week17</vh>
@@ -177,7 +199,10 @@
 <v t="leo.20170419095818.1"><vh>@edit 20170426.md</vh></v>
 <v t="leo.20170517104110.1"><vh>@edit 20170503.md</vh></v>
 <v t="leo.20170517104112.1"><vh>@edit 20170510.md</vh></v>
+<v t="leo.20170628230320.1"><vh>@edit 20170517.md</vh></v>
+<v t="leo.20170628230324.1"><vh>@edit 20170524.md</vh></v>
 <v t="leo.20170531093729.1"><vh>@edit 20170531.md</vh></v>
+<v t="leo.20170628231228.1"><vh>@edit 20170607.md</vh></v>
 <v t="leo.20170614092210.1"><vh>@edit 20170614.md</vh></v>
 <v t="yen.20170108171733.81" a="E"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
@@ -285,6 +310,16 @@
 <v t="leo.20170621095056.5"><vh>Recovered node "上課內容1" from @clean index.html</vh>
 <v t="leo.20170621095056.6"><vh>old:上課內容1</vh></v>
 <v t="leo.20170621095056.7"><vh>new:上課內容1</vh></v>
+</v>
+</v>
+<v t="leo.20170628223740.1" a="E"><vh>Recovered Nodes</vh>
+<v t="leo.20170628223740.2"><vh>Recovered node "上課內容1" from @clean index.html</vh>
+<v t="leo.20170628223740.3"><vh>old:上課內容1</vh></v>
+<v t="leo.20170628223740.4"><vh>new:上課內容1</vh></v>
+</v>
+<v t="leo.20170628223740.5"><vh>Recovered node "上課內容1" from @clean index.html</vh>
+<v t="leo.20170628223740.6"><vh>old:上課內容1</vh></v>
+<v t="leo.20170628223740.7"><vh>new:上課內容1</vh></v>
 </v>
 </v>
 </vnodes>
@@ -859,7 +894,7 @@ Diff...
 <t tx="leo.20170621095056.2">(uncached) leo.20170426173422.2
 Diff...
   &lt;h1&gt;心得&lt;/h1&gt;
-- 第一次用Solvespace畫連桿組合，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+- 第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
 ?                    ^
 + 第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
 ?                    ^
@@ -868,13 +903,13 @@ Diff...
 第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
 </t>
 <t tx="leo.20170621095056.4">&lt;h1&gt;心得&lt;/h1&gt;
-第一次用Solvespace畫連桿組合，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
 </t>
 <t tx="leo.20170621095056.5">(uncached) leo.20170426175602.7
 Diff...
   &lt;h1&gt;心得&lt;/h1&gt;
   
-- &lt;h2&gt;經過上次的作業這次熟悉了許多，但八連桿許多地方還是有點難的地方，dummy 也多了許多要注意的地方! &lt;/h2&gt;
+- &lt;h2&gt;經過上次的作業這次熟悉了許多 ，但八連桿許多地方還是有點難的地方，dummy 也多了許多要注意的地方! &lt;/h2&gt;
 ?                   ^
 + &lt;h2&gt;經過上次的作業這次熟悉了許多 ，但八連桿許多地方還是有點難的地方，dummy 也多了許多要注意的地方! &lt;/h2&gt;
 ?                   ^
@@ -885,7 +920,7 @@ Diff...
 </t>
 <t tx="leo.20170621095056.7">&lt;h1&gt;心得&lt;/h1&gt;
 
-&lt;h2&gt;經過上次的作業這次熟悉了許多，但八連桿許多地方還是有點難的地方，dummy 也多了許多要注意的地方! &lt;/h2&gt;
+&lt;h2&gt;經過上次的作業這次熟悉了許多 ，但八連桿許多地方還是有點難的地方，dummy 也多了許多要注意的地方! &lt;/h2&gt;
 </t>
 <t tx="leo.20170621095136.1">&lt;section&gt;
 @others
@@ -902,7 +937,7 @@ Diff...
 
 						
 </t>
-<t tx="leo.20170621095136.3"># Week 11
+<t tx="leo.20170621095136.3"># Week 14
 </t>
 <t tx="leo.20170621095136.4">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -916,6 +951,16 @@ Diff...
 						
 </t>
 <t tx="leo.20170621095136.5">心得報告
+閱讀心得 two books
+&lt;p&gt;Onshape's Greatest Tech Tips– Volume 1&lt;/p&gt;
+&lt;p&gt;心得:&lt;/p&gt;
+看完文章後，可以清楚了解on shape每個功能在產品設計中的應用，例如:使用追隨模式，可以合作夥伴和作者同步討論產品特徵並及時修改，以及使用導入DXF檔的功能中，2D草圖匯入後，方便對照進行3D建模，建好的產品儲存時還會連同時間記錄起來，因此每開啟作品選單後，可以從時間軸中檢視了解產品變化，也從評論與標註功能中發現到，節省了過往傳送截圖、檔案討論的過程，可直接在作品下留言討論，並在產品特徵點上用標註方便檢視者了解產品特點，由此可知on shape在方便協同上花了許多功夫。
+
+&lt;p&gt;An Introduction to Agile Product Design&lt;/p&gt;
+&lt;p&gt;心得:&lt;/p&gt;
+現代的產品設計強調"速度"與"創新"兩點，現在社會中，若能越快抓住市場與世界趨勢去改變就越有優勢，因此敏捷的產品設計在這時代是不可或缺的能力，由此可見使用的軟體也越偏向快速、成本低、功能完備、方便討論的趨勢，且若能縮短產品設計與發佈的時間，越能搶佔市場地位，成為新潮產品，獨佔專利權，團隊合作模式也不再像以往的團隊，一人一台電腦CAD畫圖階段性接著畫，現在為節省時間都強調，同步處理因此雲端CAD的想法就出來了，所以隨著時代所需就提到了前面所說的on shape，此軟體一方面讓團隊能隨時注意組員畫圖進度並且若要組裝可以馬上應用，方便修改外，一方面因為是網頁式開啟，比起以往需要帶著軟體到處跑，現在只需要有網路皆可開啟討論便利性大大提升許多。
+總心得:看完兩篇後一方面了解到on shpae的便利性與未來性並對於此軟體的功能在產品設計中的優勢，也了解到現代產品設計的趨勢與合作團隊模式的改變，或許現在的on shape不敢說最完備的繪圖設計軟體，但相信在未來一步步改善後，也會成會未來產品設計的主流軟體。
+
 </t>
 <t tx="leo.20170621095140.1">&lt;section&gt;
 @others
@@ -1006,6 +1051,122 @@ Diff...
 						
 </t>
 <t tx="leo.20170621095203.5">期末測驗
+</t>
+<t tx="leo.20170628223740.1"></t>
+<t tx="leo.20170628223740.2">(uncached) leo.20170426173422.2
+Diff...
+  &lt;h1&gt;心得&lt;/h1&gt;
+- 第一次用Solvespace畫連桿組合，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+?                    ^
++ 第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+?                    ^
+</t>
+<t tx="leo.20170628223740.3">&lt;h1&gt;心得&lt;/h1&gt;
+第一次用Solvespace畫連桿組合 ，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+</t>
+<t tx="leo.20170628223740.4">&lt;h1&gt;心得&lt;/h1&gt;
+第一次用Solvespace畫連桿組合，有些不熟悉但也大致了解組合要點了，相信下次再做類似作業一定可以做得更好，Onshape過了一個寒假熟悉度大大降低許多，還好後面有漸入佳境，自己還需要花更多時間練習。
+</t>
+<t tx="leo.20170628223740.5">(uncached) leo.20170426175602.7
+Diff...
+  &lt;h1&gt;心得&lt;/h1&gt;
+  
+- &lt;h2&gt;經過上次的作業這次熟悉了許多，但八連桿許多地方還是有點難的地方，dummy 也多了許多要注意的地方! &lt;/h2&gt;
+?                   ^
++ &lt;h2&gt;經過上次的作業這次熟悉了許多 ，但八連桿許多地方還是有點難的地方，dummy 也多了許多要注意的地方! &lt;/h2&gt;
+?                   ^
+</t>
+<t tx="leo.20170628223740.6">&lt;h1&gt;心得&lt;/h1&gt;
+
+&lt;h2&gt;經過上次的作業這次熟悉了許多 ，但八連桿許多地方還是有點難的地方，dummy 也多了許多要注意的地方! &lt;/h2&gt;
+</t>
+<t tx="leo.20170628223740.7">&lt;h1&gt;心得&lt;/h1&gt;
+
+&lt;h2&gt;經過上次的作業這次熟悉了許多，但八連桿許多地方還是有點難的地方，dummy 也多了許多要注意的地方! &lt;/h2&gt;
+</t>
+<t tx="leo.20170629001121.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170629001121.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170629001121.3"># Week 13
+</t>
+<t tx="leo.20170629001121.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170629001121.5">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/X4OFK8FOBYo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20170629001121.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170629001121.7">&lt;h1&gt;心得&lt;/h1&gt;
+從這次做作品的過程中，有真實感受到協同的效率。
+</t>
+<t tx="leo.20170629001249.1">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/RRHEYAVaWyU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20170629001251.1">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/fVgE1uNOhbQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20170629001257.1">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/0YoMDGBQM64" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20170629001547.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="leo.20170629001547.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170629001547.3"># Week 16
+</t>
+<t tx="leo.20170629001547.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20170629001547.5">&lt;h1&gt;影片&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5SQ0e7pY2mk" frameborder="0"
 </t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {

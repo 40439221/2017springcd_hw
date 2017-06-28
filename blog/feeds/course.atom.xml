@@ -161,7 +161,16 @@ git submodule add -b gh-pages https://github.com/scrum-1/cdbw17 subw17
 
 &lt;h3&gt;作業7:&lt;/h3&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Q4JtxvUWhDo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="Brython"></category></entry><entry><title>w15 課堂測驗</title><link href="./Week%2015.html" rel="alternate"></link><published>2017-05-31T08:33:00+08:00</published><updated>2017-05-31T08:33:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-05-31:./Week 15.html</id><summary type="html">&lt;p&gt;正齒輪繪圖 &lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Q4JtxvUWhDo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="Brython"></category></entry><entry><title>w16 齒輪模擬</title><link href="./Week%2016.html" rel="alternate"></link><published>2017-06-07T17:33:00+08:00</published><updated>2017-06-07T17:33:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-06-07:./Week 16.html</id><summary type="html">&lt;p&gt;齒輪模擬&lt;/p&gt;
+
+
+&lt;h1&gt;影片:&lt;/h1&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5SQ0e7pY2mk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1&gt;心得&lt;/h1&gt;
+
+&lt;p&gt;對於on shape的齒輪呼叫與動畫作動的了解都大大提升。&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>w15 課堂測驗</title><link href="./Week%2015.html" rel="alternate"></link><published>2017-05-31T08:33:00+08:00</published><updated>2017-05-31T08:33:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-05-31:./Week 15.html</id><summary type="html">&lt;p&gt;正齒輪繪圖 &lt;/p&gt;
 
 
 &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/yLo3PgQn-Lk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
@@ -341,9 +350,9 @@ brython({debug:1, pythonpath:['./../data/py']});
 
 &lt;!-- 以下實際利用  Brython 繪圖--&gt;
 
-&lt;canvas id="onegear2" width="800" height="600"&gt;&lt;/canvas&gt;
+&lt;canvas id="gearW15" width="800" height="600"&gt;&lt;/canvas&gt;
 
-&lt;div id="onegear2_div" width="800" height="20"&gt;&lt;/div&gt;
+&lt;div id="gearW15_div" width="800" height="20"&gt;&lt;/div&gt;
 
 &lt;script type="text/python3"&gt;
 from browser import document as doc
@@ -374,7 +383,7 @@ class Spur(object):
         # 齒輪漸開線分成 15 線段繪製
         imax = 15
         # 在輸入的畫布上繪製直線, 由圓心到節圓 y 軸頂點畫一直線
-        self.create_line(midx, midy, midx-rp, midy)
+        self.create_line(midx, midy, midx, midy-rp)
         # 畫出 rp 圓, 畫圓函式尚未定義
         #create_oval(midx-rp, midy-rp, midx+rp, midy+rp, width=2)
         # a 為模數 (代表公制中齒的大小), 模數為節圓直徑(稱為節徑)除以齒數
@@ -466,22 +475,54 @@ class Spur(object):
             # lfx 為齒頂圓上的左側 x 座標, lfy 則為 y 座標
             # 下列為齒頂圓上用來近似圓弧的直線
             self.create_line(lfx,lfy,rfx,rfy,fill=color)
-canvas = doc['onegear2']
+canvas = doc['gearW15']
 ctx = canvas.getContext("2d")
 x = (canvas.width)/2
 y = (canvas.height)/2
-r = 250
+r = 0.8*(canvas.height/2)
 # 齒數
 n = 36
 # 壓力角
 pa = 20
 Spur(ctx).Gear(x, y, r, n, pa, "blue")
+
 ctx.beginPath()
-ctx.fillStyle="#0000FF"
-ctx.font="30px ScriptS"
-ctx.fillText("40439221",(canvas.width)/2-60,(canvas.height)/2+25)
+ctx.lineWidth = "600"
+ctx.strokeStyle = "white"
+ctx.moveTo(0,600)
+ctx.lineTo(800,600)
 ctx.stroke()
-&lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>w12正齒輪繪圖</title><link href="./Week%2012.html" rel="alternate"></link><published>2017-05-10T11:00:00+08:00</published><updated>2017-05-10T11:00:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-05-10:./Week 12.html</id><summary type="html">&lt;p&gt;正齒輪繪圖 &lt;/p&gt;
+
+ctx.beginPath()
+ctx.fillStyle = "#BA55D3"
+ctx.font = "30px ScriptS"
+ctx.fillText("40439221", (canvas.width)/2-60, (canvas.height)/2+25)
+ctx.stroke()
+
+&lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>w14架設伺服器主機</title><link href="./Week%2014.html" rel="alternate"></link><published>2017-05-24T11:00:00+08:00</published><updated>2017-05-24T11:00:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-05-24:./Week 14.html</id><summary type="html">&lt;p&gt;架設伺服器主機 &lt;/p&gt;
+
+
+&lt;p&gt;&lt;h&gt;心得&lt;/h&gt;
+從課堂架設伺服主機的過程中，了解這次架設IPV6後可有效的改善IPV4的漏洞，只要在學校以外的地方連上先架設好主機設定，即可享受學校資源。&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>w13第四組行走機構</title><link href="./Week%2013.html" rel="alternate"></link><published>2017-05-17T12:00:00+08:00</published><updated>2017-05-17T12:00:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-05-17:./Week 13.html</id><summary type="html">&lt;p&gt;行走機構負責部分說明&lt;/p&gt;
+
+
+&lt;h1&gt;工作內容&lt;/h1&gt;
+
+&lt;p&gt;零件繪製、機構模擬、組裝模擬、作動模擬、零件排版與切割
+&lt;h1&gt;影片連結&lt;/h1&gt;&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/X4OFK8FOBYo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/RRHEYAVaWyU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/fVgE1uNOhbQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/0YoMDGBQM64" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1&gt;排版圖&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src="../data/worker.png" width="800" /&gt;
+&lt;h1&gt;onshape連結&lt;/h1&gt;
+https://cad.onshape.com/documents/22983a081500fe849778c5bf/w/e995a739d17fc17c8aadca37/e/4c547c1146ee056afb594f42&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>w12正齒輪繪圖</title><link href="./Week%2012.html" rel="alternate"></link><published>2017-05-10T11:00:00+08:00</published><updated>2017-05-10T11:00:00+08:00</updated><author><name>40439221</name></author><id>tag:,2017-05-10:./Week 12.html</id><summary type="html">&lt;p&gt;正齒輪繪圖 &lt;/p&gt;
 
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
